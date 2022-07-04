@@ -379,7 +379,11 @@ button:hover {
 }
 .about__buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+.about__button {
+  margin: var(--mb-0-5);
 }
 /* SKILLS */
 .skills__container {
