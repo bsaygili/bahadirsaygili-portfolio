@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Bahadır Saygılı">
-    <meta name="description" content="Bahadır Saygılı's personel portfolio site.">
+    <meta name="description" content="Bahadır Saygılı's personal portfolio site.">
+    <meta name="keywords" content="portfolio, Front-end, web development, React, JavaScript">
 
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favico/favicon-16x16.png">
 
-
     <!-- IconScout Icons Pack -->
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+
     <!-- Style.css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <!-- Swiper CSS -->
@@ -25,7 +27,7 @@
     <title>bahadır saygılı</title>
   </head>
   <body>
-    <!-- header! -->
+    <!-- HEADER! -->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">Bahadır</a>
@@ -117,7 +119,7 @@
                     class="home__blob-img"
                     x="38"
                     y="15"
-                    href="assets/images/profilpic-rbg.png"
+                    href="assets/images/profile/profilpic-rbg.png"
                   />
                 </g>
               </svg>
@@ -143,13 +145,13 @@
           </div>
         </div>
       </section>
-      <!-- AboutMe -->
+      <!-- ABOUTME -->
       <section class="about section" id="about">
         <h2 class="section__title">About Me</h2>
         <span class="section__subtitle">My introduction</span>
         <div class="about__container container grid">
           <img
-            src="assets/images/profile-pic (1).png"
+            src="assets/images/profile/profile-pic (1).png"
             alt=""
             class="about__img"
           />
@@ -513,27 +515,71 @@
           <div class="swiper-wrapper">
             <!-- PORTFOLIO 1 -->
             <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio-1.jfif" alt="" class="portfolio__img">
+              <img src="assets/images/portfolio/budgettracker.png" alt="Budget Tracker" class="portfolio__img">
               <!-- buraya resim gelecek -->
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Modern Website</h3>
-                <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions</p>
-                <a href="#" class="button button--flex button--small portfolio__button">Demo<i class="uil uil-water-glass button__icon"></i></a>
+                <h3 class="portfolio__title">Budget Tracker App</h3>
+                <p class="portfolio__description">This app let you track your budget. Built with <br/> React, React-Context, MongoDb 
+                </p>
+                <a href="https://github.com/bsaygili/budget-tracker-app" target="_blank" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
               </div>
             </div>
             <!-- PORTFOLIO 2 -->
             <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio-2.png" alt="" class="portfolio__img">
+              <img src="assets/images/portfolio/ihmg-health-company.png" alt="IHMG Website" class="portfolio__img">
               <!-- buraya resim gelecek -->
               <div class="portfolio__data">
-                <h3 class="portfolio__title">Dashbord Designs</h3>
-                <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions</p>
-                <a href="#" class="button button--flex button--small portfolio__button">Demo<i class="uil uil-water-glass button__icon"></i></a>
+                <h3 class="portfolio__title">IHMG Health Co.</h3>
+                <p class="portfolio__description">This website for health company and includes videos for background. It has about, projects, solutions sections. <br>Built with: <br>
+                React, JavaScript, HTML, CSS</p>
+                <a href="#" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
               </div>
             </div>
             <!-- PORTFOLIO 3 -->
             <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio-3.jfif" alt="" class="portfolio__img">
+              <img src="assets/images/portfolio/stream-app.gif" alt="Stream-Live App" class="portfolio__img">
+              <!-- buraya resim gelecek -->
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Gamer Broadcast App</h3>
+                <p class="portfolio__description">It is a live broadcast application. Users can regiser with google account. Registered users can watch stream or open to live stream. Besides users can add, edit or delete their streams. <br> Built with: <br> React, React-Redux, HTML, JavaScript, Semantic-UI, OBS (Open Broadcaster Software), Google Auth.</p>
+                <a href="https://github.com/bsaygili/broad_cast-app" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
+              </div>
+            </div>
+            <!-- PORTFOLIO 4 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/images/portfolio/search-video-app.png" alt="Youtube Video Search App" class="portfolio__img">
+              <!-- buraya resim gelecek -->
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Video Search on Youtube</h3>
+                <p class="portfolio__description">Website adaptable to all devices. A tinny application for searching videos on youtube. This app let you look for videos and to list that has five items. Vidoes come from youtube and also you can watch, play or pause it. <br> Built with: <br> HTML, CSS, Javascript, React, React-Hooks, Semantic-UI, Youtube-Api.</p>
+                <a href="https://github.com/bsaygili/youtube-search-react-app" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
+              </div>
+            </div>
+            <!-- PORTFOLIO 5 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/images/portfolio/search-images-app.png" alt="Search Images" class="portfolio__img">
+              <!-- buraya resim gelecek -->
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Image Search on unsplash.com</h3>
+                <p class="portfolio__description">A little application for searching pictures on unsplash.com. This app let you look for pictures and to list that has ten items. Images come from unsplash.  <br> Built with: <br> HTML, CSS, Javascript, React, Semantic-UI, unsplash-api.
+                </p>
+                <a href="https://github.com/bsaygili/search-images-app" target="_blank" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
+              </div>
+            </div>
+            <!-- PORTFOLIO 6 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/images/portfolio/cyber-security-dashboard.png" alt="Wallids Cyber Security" class="portfolio__img">
+              <!-- buraya resim gelecek -->
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">DashBoard - Cyber Securtiy Admin Panel</h3>
+                <p class="portfolio__description">A dashboard is for admin who tracks cyber attacks from unknown sources. User can easily understand data from graphics and can be classified according to their security level. <br> Built with: <br> React, Material-UI, ReactCharts, Javascript, HTML, CSS.
+                </p>
+                <a href="https://github.com/bsaygili/wallids-dashboard" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
+              </div>
+            </div>
+            <!-- PORTFOLIO 7 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/images/portfolio/portfolio-3.jfif" alt="" class="portfolio__img">
               <!-- buraya resim gelecek -->
               <div class="portfolio__data">
                 <h3 class="portfolio__title">E-commerce Website</h3>
@@ -565,7 +611,7 @@
                 <i class="uil uil-message project__icon button__icon"></i>
               </a>
             </div>
-            <img src="/assets/images/project-1.png" alt="By CrisNYCa - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=94532194" class="project__img">
+            <img src="/assets/images/profile/project-1.png" alt="By CrisNYCa - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=94532194" class="project__img">
            </div>
         </div>
       </section>

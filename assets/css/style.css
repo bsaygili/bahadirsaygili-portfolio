@@ -6,7 +6,7 @@
   --header-height: 3rem;
 
   /* colors */
-  --hue-color: 142; /* favorite color*/
+  --hue-color: 240; /* favorite color*/
 
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -46,6 +46,8 @@
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
   --mb-3-5: 3.5rem;
+  --mb-4: 4rem;
+  --mb-4-5: 4.5rem;
 
   /* z index */
   --z-tooltip: 10;
@@ -163,7 +165,9 @@ img {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  border-color: var(--body-color);
+  background-color: var(--body-color);
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 
 /* nav menu */
@@ -506,11 +510,12 @@ button:hover {
 .qualification__subtitle {
   display: inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-0-5);
 }
 .qualification__calender {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
+  margin-bottom: var(--mb-1);
 }
 .qualification__rounder {
   display: inline-block;
@@ -626,10 +631,14 @@ button:hover {
 .portfolio__content {
   padding: 0 1.5rem;
 }
+.portfolio__data {
+  margin-bottom: var(--mb-4-5);
+}
 .portfolio__img {
   width: 265px;
   border-radius: 0.5rem;
   justify-self: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 1.95px 1.95px 2.6px;
 }
 .portfolio__title {
   font-size: var(--h3-font-size);
