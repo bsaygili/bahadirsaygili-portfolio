@@ -243,3 +243,13 @@ window.onload = function () {
     }
   }
 };
+
+// SEND MAIL (ConnectMe Section)
+function sendMail() {
+  var mailName = document.getElementById("name").value;
+  var mailEmail = document.getElementById("email").value;
+  var mailProject = document.getElementById("project").value;
+  var mailMessage = document.getElementById("message").value;
+  var subject = `Name: ${mailName}; \n Email:${mailEmail}; Message:${mailMessage}`;
+  window.location.href = `mailto:bhdrsaygili@gmail.com?subject=${mailProject}&body=${subject}`;
+}
