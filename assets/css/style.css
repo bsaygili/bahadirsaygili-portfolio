@@ -324,6 +324,7 @@ img {
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
+  cursor: pointer;
 }
 button:hover {
   background-color: var(--first-color-alt);
@@ -387,7 +388,7 @@ button:hover {
 .about__buttons {
   display: flex;
   justify-content: space-around;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
 }
 .about__button {
   margin: var(--mb-0-5);
