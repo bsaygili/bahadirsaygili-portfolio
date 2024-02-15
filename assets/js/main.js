@@ -233,17 +233,6 @@ TxtRotate.prototype.tick = function () {
   }, delta);
 };
 
-window.onload = function () {
-  var elements = document.getElementsByClassName("text-rotate");
-  for (var i = 0; i < elements.length; i++) {
-    var toRotate = elements[i].getAttribute("data-rotate");
-    var period = elements[i].getAttribute("data-period");
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-};
-
 // SEND MAIL (ConnectMe Section)
 function sendMail() {
   var mailName = document.getElementById("name").value;
@@ -253,3 +242,23 @@ function sendMail() {
   var subject = `Name: ${mailName}; \n Email:${mailEmail}; Message:${mailMessage}`;
   window.location.href = `mailto:bhdrsaygili@gmail.com?subject=${mailProject}&body=${subject}`;
 }
+// AUTO CALCULATE FOR EXPERIENCE
+function getExperienceYear() {
+  let resultContainer = document.getElementById("experience_year");
+  let startYear = new Date("01.12.2021").getFullYear();
+  let endYear = new Date().getFullYear();
+  let years = endYear - startYear;
+  resultContainer.textContent = `${years}+`;
+}
+
+window.onload = function () {
+  var elements = document.getElementsByClassName("text-rotate");
+  for (var i = 0; i < elements.length; i++) {
+    var toRotate = elements[i].getAttribute("data-rotate");
+    var period = elements[i].getAttribute("data-period");
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  getExperienceYear();
+};
