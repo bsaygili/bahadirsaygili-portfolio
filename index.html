@@ -5,966 +5,151 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Bahadır Saygılı">
-    <meta name="description" content="Bahadır Saygılı's personal portfolio site.">
-    <meta name="keywords" content="portfolio, Front-end, web development, React, JavaScript">
+    <meta name="author" content="Bahadır Saygılı" />
+    <meta
+      name="description"
+      content="Bahadır Saygılı's personal portfolio site."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, Front-end, web development, React, JavaScript"
+    />
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favico/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favico/favicon-16x16.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favico/favicon-16x16.png"
+    />
 
     <!-- IconScout Icons Pack -->
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 
     <!-- Style.css -->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
-    
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+
     <title>Bahadır Saygılı</title>
   </head>
   <body>
     <!-- HEADER! -->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="#" class="nav__logo">Bahadır</a>
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
-            <li class="nav_item">
-              <a href="#home" class="nav__link active-link">
-                <i class="uil uil-estate nav__icon"></i>Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user-square nav__icon"></i>About
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-file-alt nav__icon"></i>Skills
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#services" class="nav__link">
-                <i class="uil uil-suitcase-alt nav__icon"></i>Services
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i>Portfolio
-              </a>
-            </li>
-            <li class="nav_item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-envelopes nav__icon"></i>ContactMe
-              </a>
-            </li>
-          </ul>
-          <i class="uil uil-times nav__close" id="nav-close"></i>
-        </div>
-        <div class="nav__btns">
-
-          <!-- theme change buttons -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
-
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps"></i>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <div id="bs-header"></div>
     <main class="main">
-      <!-- HOME -->
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <div class="home__content grid">
-            <div class="home__social grid">
-              <a
-                href="https://www.linkedin.com/in/bahadir-saygili/"
-                target="_blank"
-                class="home__social-icon"
-                ><i class="uil uil-linkedin"></i
-              ></a>
-              <a
-                href="https://github.com/bsaygili"
-                class="home__social-icon"
-                target="_blank"
-                ><i class="uil uil-github"></i
-              ></a>
-            </div>
-            <div class="home__img">
-              <svg
-                class="home__blob"
-                viewBox="0 0 200 200"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <path
-                    fill="#8A3FFC"
-                    d="M50.4,-47C65.9,-34.9,79.4,-17.4,76.5,-2.9C73.6,11.7,54.3,23.3,38.8,31.3C23.3,39.3,11.7,43.7,0.5,43.2C-10.6,42.7,-21.2,37.2,-27.8,29.2C-34.4,21.2,-37,10.6,-41.1,-4.1C-45.3,-18.9,-51,-37.8,-44.4,-49.9C-37.8,-62,-18.9,-67.4,-0.7,-66.7C17.4,-66,34.9,-59.2,50.4,-47Z"
-                    transform="translate(100 100)"
-                  />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-                  <image
-                    class="home__blob-img"
-                    x="38"
-                    y="15"
-                    href="assets/images/profile/profilpic-rbg.png"
-                  />
-                </g>
-              </svg>
-            </div>
-            <div class="home__data">
-              <h1 class="home__title">Hi, I am
-                <span 
-                class="text-rotate" 
-                data-period="200" 
-                data-rotate='[ "Bahadır.", "a Front-end Developer.", "an Industrial Engineer." ]'>
-              </span>
-              </h1>
-              <h3 class="home__subtitle">Front-end Developer</h3>
-              <p class="home__description">
-                High level experience development knowledge, producing quality
-                work.
-              </p>
-              <a href="#contact" class="button button--flex">
-                Contact Me <i class="uil uil-message button__icon"></i
-              ></a>
-            </div>
-          </div>
-          <div class="home__scroll">
-            <a href="#about" class="home__scroll-button button--flex"
-              ><i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
-              <span class="home__scroll-name">Scroll down</span>
-              <i class="uil uil-arrow-down home__scroll-arrow"></i
-            ></a>
-          </div>
-        </div>
-      </section>
+      <!-- HERO -->
+      <div id="hero"></div>
       <!-- ABOUTME -->
-      <section class="about section" id="about">
-        <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">My introduction</span>
-        <div class="about__container container grid">
-          <img
-            src="assets/images/profile/profile-pic (1).png"
-            alt=""
-            class="about__img"
-          />
-          <div class="about__data">
-            <p class="about__description">
-              Web developer with extensive knowledge, working in web
-              technologies design and delivering quality work. And also I graduated from Industrial Engineering department of Turkish National Defense University. When I realize that software makes me exciting which has similarities with my department, I decided to give a chance myself. So, here i am. Below you can see the skills what i can offer. I'm also currently looking for my next development position, don't hesitate to reach out if you want to talk!
-            </p>
-            <div class="about__info">
-              <div>
-                <span id="experience_year" class="about__info-title"></span>
-                <span class="about__info-name"
-                  >Year <br />
-                  experience</span
-                >
-              </div>
-              <div>
-                <span class="about__info-title">13+</span>
-                <span class="about__info-name"
-                  >Completed <br />
-                  projects</span
-                >
-              </div>
-              <div>
-                <span class="about__info-title">02+</span>
-                <span class="about__info-name"
-                  >Companies <br />
-                  worked</span
-                >
-              </div>
-            </div>
-            <div class="about__buttons">
-              <a
-                download=""
-                href="assets/pdf/bahadir_saygili.pdf"
-                class="button button--flex about__button"
-              >
-                Download CV (en)
-                <i class="uil uil-file-download button__icon"></i>
-              </a> 
-            </div>
-            
-          </div>
-        </div>
-      </section>
+      <div id="aboutme"></div>
       <!-- SKILLS -->
-      <section class="skilss section" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My technical level</span>
-        <div class="skills__container container grid">
-          <div>
-            <!-- skill01 -->
-            <div class="skills__content skills__open">
-              <div class="skills__header">
-                <i class="uil uil-brackets-curly skills__icon"></i>
-                <div>
-                  <h1 class="skills__title">Front-end Developer</h1>
-                  <span class="skills__subtitle">More than 1 year</span>
-                </div>
-                <i class="uil uil-angle-double-down skills__arrow"></i>
-              </div>
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__html"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">CSS</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__css"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__number">65%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__js"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">ReactJs</h3>
-                    <span class="skills__number">65%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__react"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">VueJs</h3>
-                    <span class="skills__number">35%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__vue"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- skill02 -->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="uil uil-brain skills__icon"></i>
-                <div>
-                  <h1 class="skills__title">Industrial Engineer</h1>
-                  <span class="skills__subtitle">More than 3.5 year</span>
-                </div>
-                <i class="uil uil-angle-double-down skills__arrow"></i>
-              </div>
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Planning</h3>
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__planning"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Production</h3>
-                    <span class="skills__number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__production"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Staff Management</h3>
-                    <span class="skills__number">85%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__staff"></span>
-                  </div>
-                </div>
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Leadership</h3>
-                    <span class="skills__number">90%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__leadership"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div id="myskills"></div>
       <!-- QUALIFICATION -->
-      <section class="section qualification">
-        <h2 class="section__title">Qualification</h2>
-        <span class="section__subtitle">My personel journey</span>
-        <div class="qualification__container container">
-          <div class="qualification__tabs">
-            <div class="qualification__button button--flex qualification__active" data-target="#education">
-              <i class="uil uil-graduation-cap qualification__icon"></i>
-              Education
-            </div>
-            <div class="qualification__button button--flex" data-target="#work">
-              <i class="uil uil-suitcase qualification__icon"></i>
-              Work
-            </div>
-          </div>
-          <div class="qualification__sections">
-            <!-- QUALIFICATION CONTENT 1 -->
-            <div class="qualification__content qualification__active" data-content id="education">
-              <!-- QUALIFICATION 1 -->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Vocational School of Justice</h3>
-                  <span class="qualification__subtitle"><i class="uil uil-balance-scale"></i>Anadol University - Eskişehir </span>
-                    <div class="qualification__calender">
-                      <i class="uil uil-calendar-alt"></i> 2014-2018
-                  </div>
-                </div>
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-              </div>
-              <!-- QUALIFICATION 2 -->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Industrial Engineer</h3>
-                  <span class="qualification__subtitle"><i class="uil uil-plane"></i> Air Force Academy - İstanbul</span>
-                    <div class="qualification__calender">
-                      <i class="uil uil-calendar-alt"></i> 2010-2014
-                    </div>
-                </div>
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-              </div>
-              <!-- QUALIFICATION 3 -->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">High School</h3>
-                  <span class="qualification__subtitle"><i class="uil uil-fire"></i> Işıklar Military High School - Bursa</span>
-                    <div class="qualification__calender">
-                      <i class="uil uil-calendar-alt"></i> 2006-2010
-                    </div>
-                </div>
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-              </div>
-            </div>
-            <!-- QUALIFICATION CONTENT 2 -->
-            <div class="qualification__content" data-content id="work">
-              <!-- QUALIFICATION 1 -->
-              <div class="qualification__data">
-                <div></div>
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-                <div>
-                  <h3 class="qualification__title">Freelance Front-end Developer </h3>
-                  <span class="qualification__subtitle">Fanus Media - İzmir</span>
-                    <div class="qualification__calender">
-                      <i class="uil uil-calendar-alt"></i> 2021-2022
-                    </div> 
-                </div>
-                
-              </div>
-              <!-- QUALIFICATION 2 -->
-              <div class="qualification__data">
-                <div></div>
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-
-                <div>
-                  <h3 class="qualification__title">Planning and Production Engineer</h3>
-                  <span class="qualification__subtitle"
-                    >Balçık Heating Elements -
-                    Ankara</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i> 2018-2022
-                  </div>
-                </div>
-              </div>
-              <!-- QUALIFICATION 3 -->
-              <div class="qualification__data">
-                <div></div>
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <!-- <span class="qualification__line"></span> -->
-                </div>
-
-                <div>
-                  <h3 class="qualification__title">Interceptor Controller</h3>
-                  <span class="qualification__subtitle"
-                    >Turkish Air Force -
-                    Konya</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i> 2014-2018
-                  </div>
-                </div>
-              </div>
-          </div>
-        </div>
-      </section>
+      <div id="qualifications"></div>
       <!-- SERVICES -->
-      <section class="services section" id="services">
-         <h2 class="section__title">Services</h2>
-         <span class="section__subtitle">What i offer?</span>
-         <div class="services__container container grid">
-          <!-- SERVICES 01 -->
-          <div class="services__content">
-            <div>
-              <i class="uil uil-arrow services__icon"></i>
-              <h3 class="services__title">Front-end <br/> Developer</h3>
-            </div>
-            <span class="button button--flex button--small button--link services__button">View more <i class="uil uil-angle-double-right button__icon"></i></span>
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4 class="services__modal-title">
-                  Front-end <br/> Developer
-                </h4>
-                <i class="uil uil-times services__modal-close"></i>
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i class="uil uil-check services__modal-icon"></i>
-                    <p>Optimize applications for maximum speed.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check services__modal-icon"></i>
-                    <p>Design mobile-based features.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check services__modal-icon"></i>
-                    <p>Collaborate with back-end developers and web designers to improve usability.</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check services__modal-icon"></i>
-                    <p>Stay up-to-date on emerging technologies.</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- SERVICES 02 -->
-          <div class="services__content">
-            <div>
-              <i class="uil uil-head-side services__icon"></i>
-              <h3 class="services__title">Industrial <br/> Engineering</h3>
-            </div>
-            <span class="button button--flex button--small button--link services__button">View more <i class="uil uil-angle-double-right button__icon"></i></span>
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <h4 class="services__modal-title">
-                  Industrial <br/> Engineering
-                </h4>
-                <i class="uil uil-times services__modal-close"></i>
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
-                    <i class="uil uil-check services__modal-icon"></i>
-                    <p>Having assimilated the concept of CRM, prone to teamwork</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check services__modal-icon"></i>
-                    <p>High Communication Skills, result oriented and problem solving ability</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check services__modal-icon"></i>
-                    <p>Having the ability to use computers and programs, read technical drawings, prepare and present presentations</p>
-                  </li>
-                  <li class="services__modal-service">
-                    <i class="uil uil-check services__modal-icon"></i>
-                    <p>Basic AutoCad knowledge (can be developed)</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-         </div> 
-      </section>
+      <div id="myservices"></div>
       <!-- PORTFOLIO -->
-      <section class="portfolio section" id="portfolio">
-        <h2 class="section__title">Portfolio</h2>
-        <span class="section__subtitle">Most recent works</span>
-        <div class="portfolio__container container swiper">
-          <div class="swiper-wrapper">
-            <!-- PORTFOLIO 1 -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio/budgettracker.png" alt="Budget Tracker" class="portfolio__img">
-              <!-- buraya resim gelecek -->
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Budget Tracker App</h3>
-                <p class="portfolio__description">This app let you track your budget. <br> Built with: <br/> React, React-Context, MongoDb 
-                </p>
-                <a href="https://github.com/bsaygili/budget-tracker-app" target="_blank" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
-              </div>
-            </div>
-            <!-- PORTFOLIO 2 -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio/ihmg-health-company.png" alt="IHMG Website" class="portfolio__img">
-              <!-- buraya resim gelecek -->
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">IHMG Health Co.</h3>
-                <p class="portfolio__description">This website for health company and includes videos for background. It has about, projects, solutions sections. <br>Built with: <br>
-                React, JavaScript, HTML, CSS</p>
-                <a href="#" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
-              </div>
-            </div>
-            <!-- PORTFOLIO 3 -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio/stream-app.gif" alt="Stream-Live App" class="portfolio__img">
-              <!-- buraya resim gelecek -->
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Gamer Broadcast App</h3>
-                <p class="portfolio__description">It is a live broadcast application. Users can regiser with google account. Registered users can watch stream or open to live stream. Besides users can add, edit or delete their streams. <br> Built with: <br> React, React-Redux, HTML, JavaScript, Semantic-UI, OBS (Open Broadcaster Software), Google Auth.</p>
-                <a href="https://github.com/bsaygili/broad_cast-app" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
-              </div>
-            </div>
-            <!-- PORTFOLIO 4 -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio/search-video-app.png" alt="Youtube Video Search App" class="portfolio__img">
-              <!-- buraya resim gelecek -->
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Video Search on Youtube</h3>
-                <p class="portfolio__description">Website adaptable to all devices. A tinny application for searching videos on youtube. This app let you look for videos and to list that has five items. Vidoes come from youtube and also you can watch, play or pause it. <br> Built with: <br> HTML, CSS, Javascript, React, React-Hooks, Semantic-UI, Youtube-Api.</p>
-                <a href="https://github.com/bsaygili/youtube-search-react-app" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
-                <a href="https://searchvideoonyt.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">Live Demo<i class="uil uil-globe button__icon"></i></a>
-              </div>
-            </div>
-            <!-- PORTFOLIO 5 -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio/search-images-app.png" alt="Search Images" class="portfolio__img">
-              <!-- buraya resim gelecek -->
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Image Search on unsplash.com</h3>
-                <p class="portfolio__description">A little application for searching pictures on unsplash.com. This app let you look for pictures and to list that has ten items. Images come from unsplash.  <br> Built with: <br> HTML, CSS, Javascript, React, Semantic-UI, unsplash-api.
-                </p>
-                <a href="https://github.com/bsaygili/search-images-app" target="_blank" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
-                <a href="https://imagesearchunsplash.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">Live Demo<i class="uil uil-globe button__icon"></i></a>
-              </div>
-            </div>
-            <!-- PORTFOLIO 6 -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio/cyber-security-dashboard.png" alt="Wallids Cyber Security" class="portfolio__img">
-              <!-- buraya resim gelecek -->
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">DashBoard - Cyber Securtiy Admin Panel</h3>
-                <p class="portfolio__description">A dashboard is for admin who tracks cyber attacks from unknown sources. User can easily understand data from graphics and can be classified according to their security level. <br> Built with: <br> React, Material-UI, ReactCharts, Javascript, HTML, CSS.
-                </p>
-                <a href="https://github.com/bsaygili/wallids-dashboard" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
-              </div>
-            </div>
-            <!-- PORTFOLIO 7 -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio/weather-forecast-extension.png" alt="Weather Forecast Extension" class="portfolio__img">
-              <!-- buraya resim gelecek -->
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Chrome Extension: Daily Weather Forecast</h3>
-                <p class="portfolio__description">I developed a Chrome extension. It shows the daily weather conditions according to the entered city name. I had a lot of fun coding.
-                  <br> Built with: <br>Javascript, HTML, CSS, OpenWeatherMap Api
-                </p>
-                <a href="https://github.com/bsaygili/weather-forecast-chrome-extensions" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
-              </div>
-            </div>
-            <!-- PORTFOLIO 8 -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio/weather-forecast.png" alt="Weather Forecast" class="portfolio__img">
-              <!-- buraya resim gelecek -->
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Daily Weather Forecast</h3>
-                <p class="portfolio__description">I developed a weather forecast application. It shows the daily weather conditions according to the entered city name.
-                  <br> Built with: <br>React, Javascript, HTML, CSS, OpenWeatherMap Api
-                </p>
-                <a href="https://github.com/bsaygili/weather-forecast-app" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
-                <a href="https://dailyweatherforecast.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">Live Demo<i class="uil uil-globe button__icon"></i></a>
-              </div>
-            </div>
-            <!-- PORTFOLIO 9 -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio/starbucks-clone-css.png" alt="Starbucks Clone" class="portfolio__img">
-              <!-- buraya resim gelecek -->
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Starbuks CSS Clone</h3>
-                <p class="portfolio__description">
-                  In this project, i try to develop my responsive design and CSS habits. Firstly, i watch tutorials and than close it. So, i am coding myself entire project.
-                  <br> Built with: <br>Javascript, HTML, CSS.
-                </p>
-                <a href="https://github.com/bsaygili/starbucks-clone" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
-              </div>
-            </div>
-            <!-- PORTFOLIO 10 -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio/qr-code-genarator.png" alt="QR Code Generator" class="portfolio__img">
-              <!-- buraya resim gelecek -->
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">QR Code Generator</h3>
-                <p class="portfolio__description">In this project,
-                  user enter text or URL. And application convert  QR Code using qr Code generator api.  Very basic application but it helps me to how to access api or to handle api-request without axios.
-                  Bonus: i build extension which is usable from github(download extension-pack). Enjoy it!
-                  <br> Built with: <br>React, javascript, HTML, CSS,
-                </p>
-                <a href="https://github.com/bsaygili/qrCode-generator-app_and_extension" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
-              </div>
-            </div>
-            <!-- PORTFOLIO 1 -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio/home-library.png" alt="My Home Library" class="portfolio__img">
-              <!-- buraya resim gelecek -->
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">My Home Library</h3>
-                <p class="portfolio__description">this project shows a Library to user and makes a get-request from example-data API. On the oher hand this app allows to user add or remove books to/from favorites list.
-                  <br> Built with: <br>React, axios, javascript, HTML, CSS,
-                </p>
-                <a href="https://github.com/bsaygili/home-library-app" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
-              </div>
-            </div>
-            <!-- PORTFOLIO 12 -->
-            <div class="portfolio__content grid swiper-slide">
-              <img src="assets/images/portfolio/portfolio-3.jfif" alt="" class="portfolio__img">
-              <!-- buraya resim gelecek -->
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">E-commerce Website</h3>
-                <p class="portfolio__description">Website adaptable to all devices, with ui components and animated interactions</p>
-                <a href="#" class="button button--flex button--small portfolio__button">Github<i class="uil uil-github button__icon"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-pagination"></div>
-
-        </div>
-      </section>
+      <div id="bs-portfolio"></div>
       <!-- PROJECTS -->
-      <section class="project section">
-        <div class="project__bg">
-           <div class="project__container container grid">
-            <div class="project__data">
-              <h2 class="project__title">You have a new project.</h2>
-              <p class="project__description">Let's make it happen.</p>
-              <a href="#contact" class="button button--flex button--white">
-                Contact Me
-                <i class="uil uil-message project__icon button__icon"></i>
-              </a>
-            </div>
-            <img src="/assets/images/profile/project-1.png" alt="By CrisNYCa - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=94532194" class="project__img">
-           </div>
-        </div>
-      </section>
+      <div id="bs-get-offer-banner"></div>
       <!-- TESTIMONIAL -->
-      <section class="testimonial section">
-        <h2 class="section__title">Testimonial</h2>
-        <span class="section__subtitle">My friends saying</span>
-        <div class="testimonial__container container swiper">
-          <div class="swiper-wrapper">
-            <!--TESTIMONIAL 01  -->
-            <div class="testimonial__content swiper-slide">
-              <div class="testimonial__data">
-                <div class="testimonial__header">
-                  <img src="/assets/images//friends/rifatcangurbuz.jfif" alt="" class="testimonial__img">
-                  <div>
-                    <h3 class="testimonial__name">Rıfat Can GÜRBÜZ</h3>
-                    <span class="testimonial__client">Co-worker</span>
-                  </div>
-                </div>
-                <div>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                </div>
-              </div>
-              <p class="testimonial__description">Bahadır has an excellent perspective. Working together is very exciting. He is very talented and highly motivated.</p>
-            </div>
-            <!--TESTIMONIAL 02  -->
-            <div class="testimonial__content swiper-slide">
-              <div class="testimonial__data">
-                <div class="testimonial__header">
-                  <img src="/assets/images/friends/batuhanyilmaz.jfif" alt="" class="testimonial__img">
-                  <div>
-                    <h3 class="testimonial__name">A. Batuhan YILMAZ</h3>
-                    <span class="testimonial__client">Co-worker</span>
-                  </div>
-                </div>
-                <div>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                </div>
-              </div>
-              <p class="testimonial__description">Bahadır has a strong communication and a very broad vision. He is very enthusiastic about learning new technologies.</p>
-            </div>
-            <!--TESTIMONIAL 03  -->
-            <div class="testimonial__content swiper-slide">
-              <div class="testimonial__data">
-                <div class="testimonial__header">
-                  <img src="/assets/images/friends/bugracelikcan.jfif" alt="" class="testimonial__img">
-                  <div>
-                    <h3 class="testimonial__name">Buğra ÇELİKCAN</h3>
-                    <span class="testimonial__client">Co-worker</span>
-                  </div>
-                </div>
-                <div>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                </div>
-              </div>
-              <p class="testimonial__description">Bahadır has an endless energy. He is a person who always obeys the rules in his work. Working hours are just numbers for him.</p>
-            </div>
-            <!--TESTIMONIAL 04  -->
-            <div class="testimonial__content swiper-slide">
-              <div class="testimonial__data">
-                <div class="testimonial__header">
-                  <img src="/assets/images/friends/burakcelik.jfif" alt="" class="testimonial__img">
-                  <div>
-                    <h3 class="testimonial__name">Burak ÇELİK</h3>
-                    <span class="testimonial__client">Co-worker</span>
-                  </div>
-                </div>
-                <div>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                </div>
-              </div>
-              <p class="testimonial__description">Bahadır has a different perspective on design. Someone who writes Javascript with passion. Coding is not just a job for him, it's a dedication.</p>
-            </div>
-            <!--TESTIMONIAL 05  -->
-            <div class="testimonial__content swiper-slide">
-              <div class="testimonial__data">
-                <div class="testimonial__header">
-                  <img src="/assets/images/friends/oguzkocalar.jfif" alt="" class="testimonial__img">
-                  <div>
-                    <h3 class="testimonial__name">Oğuz KOCALAR</h3>
-                    <span class="testimonial__client">Co-worker</span>
-                  </div>
-                </div>
-                <div>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                </div>
-              </div>
-              <p class="testimonial__description">Bahadır helped me a lot as long as we worked together. We learned a lot from each other about production management. Personnel management and leadership are among its leading features.</p>
-            </div>
-            <!--TESTIMONIAL 06  -->
-            <div class="testimonial__content swiper-slide">
-              <div class="testimonial__data">
-                <div class="testimonial__header">
-                  <img src="/assets/images/friends/ozguratasoy.jpg" alt="" class="testimonial__img">
-                  <div>
-                    <h3 class="testimonial__name">Özgür ATASOY</h3>
-                    <span class="testimonial__client">Former Manager</span>
-                  </div>
-                </div>
-                <div>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                </div>
-              </div>
-              <p class="testimonial__description">What I see as a manager is that; He is someone who tries to do the given work on time and gives timely feedback. His willingness and appetite in his duties makes working together enjoyable.</p>
-            </div>
-            <!--TESTIMONIAL 07  -->
-            <div class="testimonial__content swiper-slide">
-              <div class="testimonial__data">
-                <div class="testimonial__header">
-                  <img src="/assets/images/friends/safaerden.jfif" alt="" class="testimonial__img">
-                  <div>
-                    <h3 class="testimonial__name">Safa ERDEN</h3>
-                    <span class="testimonial__client">Team Leader</span>
-                  </div>
-                </div>
-                <div>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                </div>
-              </div>
-              <p class="testimonial__description">Bahadır is a team player. His support was always on point and on time in the missing points in the team. He is highly communicative and has strong dialogues.</p>
-            </div>
-            <!--TESTIMONIAL 08  -->
-            <div class="testimonial__content swiper-slide">
-              <div class="testimonial__data">
-                <div class="testimonial__header">
-                  <img src="/assets/images/friends/tarikagridag.jpg" alt="" class="testimonial__img">
-                  <div>
-                    <h3 class="testimonial__name">L.Tarık AĞRIDAĞ</h3>
-                    <span class="testimonial__client">Co-worker</span>
-                  </div>
-                </div>
-                <div>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                  <i class="uil uil-star testimonial__icon-star"></i>
-                </div>
-              </div>
-              <p class="testimonial__description">He has a great deal of hard will and determination in terms of self dicipline. Besides He has made me gained a lot of experiences about life and occupation.</p>
-            </div>
-          </div>
-          <div class="swiper-pagination swiper-pagination-testimonial"></div>
-        </div>
-      </section>
+      <div id="bs-testimonials"></div>
       <!-- CONTACT ME -->
-      <section class="contact section" id="contact">
-        <h2 class="section__title">Contact Me!</h2>
-        <span class="section__subtitle">Get in touch</span>
-        <div class="contact__container container grid">
-          <div>
-            <div class="contact__information">
-              <i class="uil uil-phone contact__icon"></i>
-              <div>
-                <h3 class="contact__title">Call me</h3>
-                <span class="contact__subtitle">+090(507)744 0839</span>
-              </div> 
-            </div>
-            <div class="contact__information">
-              <i class="uil uil-envelope contact__icon"></i>
-              <div>
-                <h3 class="contact__title">e-mail</h2>
-                <span class="contact__subtitle">bhdrsaygili@gmail.com</span>
-              </div>
-            </div>
-            <div class="contact__information">
-              <i class="uil uil-map-marker contact__icon"></i>
-              <div>
-                <h3 class="contact__title">Location</h3>
-              <span class="contact__subtitle">Türkiye - Ankara</span>
-              </div>
-            </div>
-          </div>
-          <form action="" class="contact__form grid">
-            <div class="contact__inputs grid">
-              <div class="contact__content">
-                <label for="name" class="contact__label">Name</label>
-                <input type="text" title="name" class="contact__input" id="name"/>
-              </div>
-              <div class="contact__content">
-                <label for="email" class="contact__label">E-mail</label>
-                <input type="email" title="email" class="contact__input" id="email"/>
-              </div>
-            </div>
-            <div class="contact__content">
-              <label for="project" class="contact__label">Project</label>
-              <input type="text" title="project" class="contact__input" id="project"/>
-            </div>
-            <div class="contact__content">
-              <label for="message" class="contact__label">Message</label>
-              <textarea title="message" rows="7" cols="0" class="contact__input" id="message"></textarea>
-            </div>
-            <div>
-              <div type="button" class="button button--flex" onclick="sendMail()" >
-                Send message
-                <i class="uil uil-message button__icon"></i>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
+      <div id="bs-contacts-me"></div>
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer__bg">
-        <div class="footer__container container grid">
-          <div>
-            <h1 class="footer__title">Bahadır</h1>
-            <span class="footer__subtitle">Front-end Developer</span>
-          </div>
-
-          <ul class="footer__links">
-            <li>
-              <a href="#services" class="footer__link">Services</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact" class="footer__link">Contact Me</a>
-            </li>
-          </ul>
-          <div class="footer__socials">
-            <a href="https://www.facebook.com/profile.php?id=100005602485109" target="_blank" class="footer__social">
-              <i class="uil uil-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com/bhdrsaygili/" target="_blank" class="footer__social">
-              <i class="uil uil-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/bahadir-saygili/" target="_blank" class="footer__social">
-              <i class="uil uil-linkedin"></i>
-            </a>
-            <a href="https://github.com/bsaygili" target="_blank" class="footer__social">
-              <i class="uil uil-github"></i>
-            </a>
-          </div>
-        </div>
-        <p class="footer__copy">&#169; bahadırsaygili. All rights reserved.
-          <a class="footer__copy" href="https://www.termsfeed.com/live/1c78de81-6a55-44f4-be13-5cc8a60db1b5" target="_blank" rel="noopener">
-          Privacy Policy
-         </a>
-        </p>
-        
-      </div>
-    </footer>
-
+    <div id="footer"></div>
     <!-- SCROLL-UP -->
     <a href="#" class="scrollup" id="scroll-up">
       <i class="uil uil-arrow-circle-up scrollup__icon"></i>
     </a>
+    <!-- components -->
+    <script>
+      window.onload = function () {
+        fetch("/components/header.html")
+          .then((res) => res.text())
+          .then((data) => {
+            const bsHeader = document.getElementById("bs-header");
+            bsHeader.innerHTML = data;
+            const scripts = bsHeader.querySelectorAll("script");
+            scripts.forEach((oldScript) => {
+              const newScript = document.createElement("script");
+              newScript.text = oldScript.textContent;
+              if (oldScript.src) {
+                newScript.src = oldScript.src;
+              }
+              document.body.appendChild(newScript);
+            });
+          });
+
+        fetch("/components/footer.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("footer").innerHTML = data;
+          });
+        fetch("/components/hero.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("hero").innerHTML = data;
+          });
+        fetch("/components/aboutme.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("aboutme").innerHTML = data;
+          });
+        fetch("/components/skills.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("myskills").innerHTML = data;
+          });
+        fetch("/components/qualifications.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("qualifications").innerHTML = data;
+          });
+        fetch("/components/myservices.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("myservices").innerHTML = data;
+          });
+        fetch("/components/portfolio.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("bs-portfolio").innerHTML = data;
+          });
+        fetch("/components/getOfferBanner.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("bs-get-offer-banner").innerHTML = data;
+          });
+        fetch("/components/testimonials.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("bs-testimonials").innerHTML = data;
+          });
+        fetch("/components/contactsMe.html")
+          .then((res) => res.text())
+          .then((data) => {
+            document.getElementById("bs-contacts-me").innerHTML = data;
+          });
+      };
+    </script>
     <!-- swipper.js -->
     <script src="/assets/js/swiper-bundle.min.js"></script>
     <!-- main.js -->
-    <script src="/assets/js/main.js"></script>
+    <!-- <script src="/assets/js/main.js"></script> -->
   </body>
 </html>

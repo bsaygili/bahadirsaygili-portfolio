@@ -6,7 +6,7 @@
   --header-height: 3rem;
 
   /* colors */
-  --hue-color: 10; /* favorite color*/
+  --hue-color: 8; /* favorite color*/
 
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -453,16 +453,16 @@ button:hover {
   width: 90%;
 }
 .skills__css {
-  width: 70%;
+  width: 90%;
 }
 .skills__js {
-  width: 65%;
+  width: 85%;
 }
 .skills__react {
-  width: 65%;
+  width: 85%;
 }
 .skills__vue {
-  width: 35%;
+  width: 65%;
 }
 .skills__planning {
   width: 90%;

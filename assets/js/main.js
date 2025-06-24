@@ -5,22 +5,22 @@ const navMenu = document.querySelector("#nav-menu"),
   navLink = document.querySelectorAll(".nav__link");
 
 // SHOW NAV MENU
-if (navToggle) {
+if (navToggle && navMenu) {
   navToggle.addEventListener("click", () => {
     navMenu.classList.add("show-menu");
   });
 }
 
 // HIDE NAV MENU
-if (navClose) {
+if (navClose && navMenu) {
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
   });
 }
 
 // HIDE MENU FOR MOBILE DEVICES
-linkAction = () => {
-  navMenu.classList.remove("show-menu");
+const linkAction = () => {
+  if (navMenu) navMenu.classList.remove("show-menu");
 };
 navLink.forEach((item) => item.addEventListener("click", linkAction));
 
@@ -32,7 +32,6 @@ function toggleSkills() {
 
   for (let i = 0; i < skillsContent.length; i++) {
     skillsContent[i].className = "skills__content skills__close";
-    console.log(skillsContent[i].className);
   }
   if (itemClass === "skills__content skills__close") {
     this.parentNode.className = "skills__content skills__open";
@@ -47,14 +46,17 @@ const tabs = document.querySelectorAll("[data-target]"),
   tabContents = document.querySelectorAll("[data-content]");
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
-    const target = document.querySelector(tab.dataset.target);
+    const targetSelector =
+      /** @type {HTMLElement} */ (tab).dataset.target || "";
+    const target = document.querySelector(targetSelector);
 
     tabContents.forEach((tabContent) => {
       tabContent.classList.remove("qualification__active");
     });
 
-    target.classList.add("qualification__active");
-    console.log(tab);
+    if (target) {
+      target.classList.add("qualification__active");
+    }
     tabs.forEach((tab) => {
       tab.classList.remove("qualification__active");
     });
@@ -120,18 +122,24 @@ function scrollActive() {
   const scrollY = window.pageYOffset;
 
   sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute("id");
+    const sectionHeight = /** @type {HTMLElement} */ (current).offsetHeight;
+    const sectionTop = /** @type {HTMLElement} */ (current).offsetTop - 50;
+    const sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
+      const link = document.querySelector(
+        ".nav__menu a[href*=" + sectionId + "]"
+      );
+      if (link) {
+        link.classList.add("active-link");
+      }
     } else {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
+      const link = document.querySelector(
+        ".nav__menu a[href*=" + sectionId + "]"
+      );
+      if (link) {
+        link.classList.remove("active-link");
+      }
     }
   });
 }
@@ -140,16 +148,20 @@ window.addEventListener("scroll", scrollActive);
 function scrollHeader() {
   const nav = document.getElementById("header");
   // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-  if (this.scrollY >= 80) nav.classList.add("scroll-header");
-  else nav.classList.remove("scroll-header");
+  if (nav) {
+    if (this.scrollY >= 80) nav.classList.add("scroll-header");
+    else nav.classList.remove("scroll-header");
+  }
 }
 window.addEventListener("scroll", scrollHeader);
 // SHOW SCROLL ARROW
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
   // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-  if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
-  else scrollUp.classList.remove("show-scroll");
+  if (scrollUp) {
+    if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+    else scrollUp.classList.remove("show-scroll");
+  }
 }
 window.addEventListener("scroll", scrollUp);
 
@@ -166,7 +178,9 @@ const selectedIcon = localStorage.getItem("selected-icon");
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? "dark" : "light";
 const getCurrentIcon = () =>
-  themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+  themeButton && themeButton.classList.contains(iconTheme)
+    ? "uil-moon"
+    : "uil-sun";
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
@@ -174,20 +188,23 @@ if (selectedTheme) {
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
     darkTheme
   );
-  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
-    iconTheme
-  );
+  if (themeButton) {
+    themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+      iconTheme
+    );
+  }
 }
-
 // Activate / deactivate the theme manually with the button
-themeButton.addEventListener("click", () => {
-  // Add or remove the dark / icon theme
-  document.body.classList.toggle(darkTheme);
-  themeButton.classList.toggle(iconTheme);
-  // We save the theme and the current icon that the user chose
-  localStorage.setItem("selected-theme", getCurrentTheme());
-  localStorage.setItem("selected-icon", getCurrentIcon());
-});
+if (themeButton) {
+  themeButton.addEventListener("click", () => {
+    // Add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme);
+    themeButton.classList.toggle(iconTheme);
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem("selected-theme", getCurrentTheme());
+    localStorage.setItem("selected-icon", getCurrentIcon());
+  });
+}
 
 //Animate Home Title
 var TxtRotate = function (el, toRotate, period) {
@@ -235,10 +252,24 @@ TxtRotate.prototype.tick = function () {
 
 // SEND MAIL (ConnectMe Section)
 function sendMail() {
-  var mailName = document.getElementById("name").value;
-  var mailEmail = document.getElementById("email").value;
-  var mailProject = document.getElementById("project").value;
-  var mailMessage = document.getElementById("message").value;
+  var nameElem = document.getElementById("name");
+  var emailElem = document.getElementById("email");
+  var projectElem = document.getElementById("project");
+  var messageElem = document.getElementById("message");
+
+  var mailName = nameElem
+    ? /** @type {HTMLInputElement} */ (nameElem).value
+    : "";
+  var mailEmail = emailElem
+    ? /** @type {HTMLInputElement} */ (emailElem).value
+    : "";
+  var mailProject = projectElem
+    ? /** @type {HTMLInputElement} */ (projectElem).value
+    : "";
+  var mailMessage = messageElem
+    ? /** @type {HTMLTextAreaElement} */ (messageElem).value
+    : "";
+
   var subject = `Name: ${mailName}; \n Email:${mailEmail}; Message:${mailMessage}`;
   window.location.href = `mailto:bhdrsaygili@gmail.com?subject=${mailProject}&body=${subject}`;
 }
@@ -248,7 +279,9 @@ function getExperienceYear() {
   let startYear = new Date("01.12.2021").getFullYear();
   let endYear = new Date().getFullYear();
   let years = endYear - startYear;
-  resultContainer.textContent = `${years}+`;
+  if (resultContainer) {
+    resultContainer.textContent = `${years}+`;
+  }
 }
 
 window.onload = function () {
