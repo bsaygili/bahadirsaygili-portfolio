@@ -1,0 +1,11 @@
+import "@testing-library/jest-dom/vitest";
+import { afterEach } from "vitest";
+import { cleanup } from "@testing-library/react";
+
+afterEach(() => {
+  cleanup();
+  localStorage.clear();
+  document.body.className = "";
+  document.documentElement.lang = "en";
+  document.documentElement.dir = "ltr";
+});

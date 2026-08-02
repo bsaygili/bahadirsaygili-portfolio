@@ -1,159 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <!-- meta tags -->
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Bahadır Saygılı" />
-    <meta
-      name="description"
-      content="Bahadır Saygılı's personal portfolio site."
-    />
-    <meta
-      name="keywords"
-      content="portfolio, Front-end, web development, React, JavaScript"
-    />
-    <meta
-      name="google-site-verification"
-      content="k5x_zw3gE0JuVAIUloL6gdg7pporpQemEmudcSnnVIo"
-    />
-
-    <!-- favicon -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favico/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favico/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favico/favicon-16x16.png"
-    />
-
-    <!-- IconScout Icons Pack -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-
-    <!-- Style.css -->
+    <meta name="description" content="Bahadır Saygılı's personal portfolio site." />
+    <meta name="keywords" content="portfolio, Front-end, web development, React, JavaScript" />
+    <meta name="google-site-verification" content="k5x_zw3gE0JuVAIUloL6gdg7pporpQemEmudcSnnVIo" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favico/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favico/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favico/favicon-16x16.png" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
-
     <title>Bahadır Saygılı</title>
   </head>
   <body>
-    <!-- HEADER! -->
-    <div id="bs-header"></div>
-    <main class="main">
-      <!-- HERO -->
-      <div id="hero"></div>
-      <!-- ABOUTME -->
-      <div id="aboutme"></div>
-      <!-- SKILLS -->
-      <div id="myskills"></div>
-      <!-- QUALIFICATION -->
-      <div id="qualifications"></div>
-      <!-- SERVICES -->
-      <div id="myservices"></div>
-      <!-- PORTFOLIO -->
-      <div id="bs-portfolio"></div>
-      <!-- PROJECTS -->
-      <div id="bs-get-offer-banner"></div>
-      <!-- TESTIMONIAL -->
-      <div id="bs-testimonials"></div>
-      <!-- CONTACT ME -->
-      <div id="bs-contacts-me"></div>
-    </main>
-    <!-- FOOTER -->
-    <div id="footer"></div>
-    <!-- SCROLL-UP -->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="uil uil-arrow-circle-up scrollup__icon"></i>
-    </a>
-    <!-- components -->
-    <script>
-      window.onload = function () {
-        fetch("/components/header.html")
-          .then((res) => res.text())
-          .then((data) => {
-            const bsHeader = document.getElementById("bs-header");
-            bsHeader.innerHTML = data;
-            const scripts = bsHeader.querySelectorAll("script");
-            scripts.forEach((oldScript) => {
-              const newScript = document.createElement("script");
-              newScript.text = oldScript.textContent;
-              if (oldScript.src) {
-                newScript.src = oldScript.src;
-              }
-              document.body.appendChild(newScript);
-            });
-          });
-
-        fetch("/components/footer.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("footer").innerHTML = data;
-          });
-        fetch("/components/hero.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("hero").innerHTML = data;
-          });
-        fetch("/components/aboutme.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("aboutme").innerHTML = data;
-          });
-        fetch("/components/skills.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("myskills").innerHTML = data;
-          });
-        fetch("/components/qualifications.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("qualifications").innerHTML = data;
-          });
-        fetch("/components/myservices.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("myservices").innerHTML = data;
-          });
-        fetch("/components/portfolio.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("bs-portfolio").innerHTML = data;
-          });
-        fetch("/components/getOfferBanner.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("bs-get-offer-banner").innerHTML = data;
-          });
-        fetch("/components/testimonials.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("bs-testimonials").innerHTML = data;
-          });
-        fetch("/components/contactsMe.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("bs-contacts-me").innerHTML = data;
-          });
-      };
-    </script>
-    <!-- swipper.js -->
-    <script src="/assets/js/swiper-bundle.min.js"></script>
-    <!-- main.js -->
-    <!-- <script src="/assets/js/main.js"></script> -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

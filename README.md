@@ -8,15 +8,27 @@ Welcome to my portfolio site! This repository contains the source code and asset
 
 ## Technologies Used
 
-- HTML5
+- React + TypeScript
+- Vite
 - CSS3
-- JavaScript
 
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/bsaygili/bahadirsaygili-portfolio.git`
 2. Navigate to the project directory: `cd bahadirsaygili-portfolio`
-3. Open `index.html` in your web browser.
+3. Run `npm install`.
+4. Start the development server with `npm run dev`.
+
+## Pages
+
+- `/` — Portfolio home page
+- `/showcase` — Writing and applications
+
+Showcase content is managed in `src/data/showcase.ts`.
+
+## Tests
+
+Run the test suite with `pnpm test`, or use `pnpm test:watch` while developing.
 
 ## Contributing
 
