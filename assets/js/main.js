@@ -128,14 +128,14 @@ function scrollActive() {
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       const link = document.querySelector(
-        ".nav__menu a[href*=" + sectionId + "]"
+        ".nav__menu a[href*=" + sectionId + "]",
       );
       if (link) {
         link.classList.add("active-link");
       }
     } else {
       const link = document.querySelector(
-        ".nav__menu a[href*=" + sectionId + "]"
+        ".nav__menu a[href*=" + sectionId + "]",
       );
       if (link) {
         link.classList.remove("active-link");
@@ -186,11 +186,11 @@ const getCurrentIcon = () =>
 if (selectedTheme) {
   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-    darkTheme
+    darkTheme,
   );
   if (themeButton) {
     themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
-      iconTheme
+      iconTheme,
     );
   }
 }
