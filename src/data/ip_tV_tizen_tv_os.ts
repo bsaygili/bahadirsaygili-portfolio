@@ -1,9 +1,9 @@
 import { Article } from "./types";
 
 export const samsungTizenArticle: Article = {
-  title: "2015 Samsung Tizen TV için Web Uygulaması Geliştirmek",
+  title: "Zapla: 2015 Samsung Tizen TV için Web Uygulaması Geliştirmek",
   excerpt:
-    "Tizen Studio kurulumundan sertifika ve DUID sürecine, M3U ayrıştırmadan AVPlay ile HLS oynatmaya kadar gerçek cihaz üzerinde geliştirdiğimiz eğitim uygulamasının teknik günlüğü.",
+    "Tizen Studio kurulumundan sertifika ve DUID sürecine, M3U ayrıştırmadan AVPlay ile HLS oynatmaya kadar gerçek cihaz üzerinde geliştirdiğimiz, eğitim amaçlı, Zapla uygulamasının teknik günlüğü.",
   publishedAt: "31 Ağustos 2026",
   readingTime: "14 dk okuma",
   tags: ["Samsung Tizen", "JavaScript", "AVPlay", "Smart TV"],
@@ -41,7 +41,7 @@ export const samsungTizenArticle: Article = {
       heading: "Tizen Web Application yapısı",
       paragraphs: [
         "Uygulama HTML, CSS, JavaScript ve config.xml dosyasından oluşuyor. 2015 cihaz desteği için required_version değerini 2.3 tuttuk. Dış kaynaklara erişebilmek için internet ayrıcalığını ve access origin kuralını manifestte tanımladık.",
-        "Uygulama kimliği ve paket kimliği Tizen kurallarına uygun ve benzersiz olmalı. Ayrıca eski cihaz kurucusunun boşluklu paket adında sorun çıkardığını gördük: Hello TV.wgt kurulmazken HelloTV.wgt başarıyla kuruldu.",
+        "Uygulama kimliği ve paket kimliği Tizen kurallarına uygun ve benzersiz olmalı. Ayrıca eski cihaz kurucusunun boşluklu paket adında sorun çıkardığını gördük: boşluklu paket adı kurulmazken Zapla.wgt başarıyla kuruldu.",
       ],
       code: `<?xml version="1.0" encoding="UTF-8"?>
               <widget xmlns="http://www.w3.org/ns/widgets"
