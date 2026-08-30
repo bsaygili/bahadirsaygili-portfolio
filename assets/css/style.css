@@ -1277,12 +1277,14 @@ button:hover {
 .application-card__media {
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  background: var(--first-color-lighter);
+  /* background: var(--first-color-lighter); */
+  background: var(--first-color-second);
 }
 .application-card__media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  padding: 0.15rem;
   transition: transform 0.35s ease;
 }
 .application-card:hover img {
@@ -1293,7 +1295,21 @@ button:hover {
 }
 .application-card__links {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
+}
+
+.application-card__store-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.application-card__store-link svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
 }
 
 @media screen and (min-width: 768px) {

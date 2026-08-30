@@ -88,6 +88,8 @@ const en: Messages = {
   "seo.showcaseTitle": "Writing & Applications | Bahadır Saygılı",
   "seo.showcaseDescription":
     "Articles, engineering notes, experiments, and applications created by Bahadır Saygılı.",
+  "showcase.playstore": "Play Store",
+  "showcase.appstore": "App Store",
 };
 
 const tr: Messages = {
@@ -168,6 +170,8 @@ const tr: Messages = {
   "seo.showcaseTitle": "Yazılar & Uygulamalar | Bahadır Saygılı",
   "seo.showcaseDescription":
     "Bahadır Saygılı'nın yazıları, mühendislik notları, deneyleri ve uygulamaları.",
+  "showcase.playstore": "Play Store",
+  "showcase.appstore": "App Store",
 };
 
 const de: Messages = {
@@ -248,6 +252,8 @@ const de: Messages = {
   "seo.showcaseTitle": "Artikel & Anwendungen | Bahadır Saygılı",
   "seo.showcaseDescription":
     "Artikel, technische Notizen, Experimente und Anwendungen von Bahadır Saygılı.",
+  "showcase.playstore": "Play Store",
+  "showcase.appstore": "App Store",
 };
 
 const ar: Messages = {
@@ -327,6 +333,8 @@ const ar: Messages = {
   "seo.showcaseTitle": "المقالات والتطبيقات | بهادر سايغيلي",
   "seo.showcaseDescription":
     "مقالات وملاحظات هندسية وتجارب وتطبيقات من بهادر سايغيلي.",
+  "showcase.playstore": "متجر بلاي",
+  "showcase.appstore": "متجر التطبيقات",
 };
 
 const dictionaries = { en, tr, de, ar };

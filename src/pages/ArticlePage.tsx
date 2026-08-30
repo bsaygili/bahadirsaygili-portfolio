@@ -1,7 +1,7 @@
-import { Link, Navigate, useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import Header from "../components/Header";
+import { Link, Navigate, useParams } from "react-router-dom";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 import { articles } from "../data/showcase";
 
 export default function ArticlePage() {
@@ -47,6 +47,11 @@ export default function ArticlePage() {
                 {section.paragraphs.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
+                {section.code && (
+                  <pre>
+                    <code>{section.code}</code>
+                  </pre>
+                )}
               </section>
             ))}
           </div>
