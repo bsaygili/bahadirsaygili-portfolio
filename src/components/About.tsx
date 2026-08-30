@@ -9,7 +9,7 @@ export default function About() {
       <span className="section__subtitle">{t("about.subtitle")}</span>
       <div className="about__container container grid">
         <img
-          src="assets/images/profile/profile-pic (1).png"
+          src="/assets/images/profile/profile-pic%20(1).png"
           alt=""
           className="about__img"
         />

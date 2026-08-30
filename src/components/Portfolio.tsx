@@ -11,7 +11,7 @@ export default function Portfolio() {
           {/* PORTFOLIO 1 */}
           <div className="portfolio__content grid swiper-slide">
             <img
-              src="assets/images/portfolio/budgettracker.png"
+              src="/assets/images/portfolio/budgettracker.png"
               alt="Budget Tracker"
               className="portfolio__img"
             />
@@ -36,7 +36,7 @@ export default function Portfolio() {
           {/* PORTFOLIO 2 */}
           <div className="portfolio__content grid swiper-slide">
             <img
-              src="assets/images/portfolio/ihmg-health-company.png"
+              src="/assets/images/portfolio/ihmg-health-company.png"
               alt="IHMG Website"
               className="portfolio__img"
             />
@@ -60,7 +60,7 @@ export default function Portfolio() {
           {/* PORTFOLIO 3 */}
           <div className="portfolio__content grid swiper-slide">
             <img
-              src="assets/images/portfolio/stream-app.gif"
+              src="/assets/images/portfolio/stream-app.gif"
               alt="Stream-Live App"
               className="portfolio__img"
             />
@@ -87,7 +87,7 @@ export default function Portfolio() {
           {/* PORTFOLIO 4 */}
           <div className="portfolio__content grid swiper-slide">
             <img
-              src="assets/images/portfolio/search-video-app.png"
+              src="/assets/images/portfolio/search-video-app.png"
               alt="Youtube Video Search App"
               className="portfolio__img"
             />
@@ -123,7 +123,7 @@ export default function Portfolio() {
           {/* PORTFOLIO 5 */}
           <div className="portfolio__content grid swiper-slide">
             <img
-              src="assets/images/portfolio/search-images-app.png"
+              src="/assets/images/portfolio/search-images-app.png"
               alt="Search Images"
               className="portfolio__img"
             />
@@ -159,7 +159,7 @@ export default function Portfolio() {
           {/* PORTFOLIO 6 */}
           <div className="portfolio__content grid swiper-slide">
             <img
-              src="assets/images/portfolio/cyber-security-dashboard.png"
+              src="/assets/images/portfolio/cyber-security-dashboard.png"
               alt="Wallids Cyber Security"
               className="portfolio__img"
             />
@@ -187,7 +187,7 @@ export default function Portfolio() {
           {/* PORTFOLIO 7 */}
           <div className="portfolio__content grid swiper-slide">
             <img
-              src="assets/images/portfolio/weather-forecast-extension.png"
+              src="/assets/images/portfolio/weather-forecast-extension.png"
               alt="Weather Forecast Extension"
               className="portfolio__img"
             />
@@ -214,7 +214,7 @@ export default function Portfolio() {
           {/* PORTFOLIO 8 */}
           <div className="portfolio__content grid swiper-slide">
             <img
-              src="assets/images/portfolio/weather-forecast.png"
+              src="/assets/images/portfolio/weather-forecast.png"
               alt="Weather Forecast"
               className="portfolio__img"
             />
@@ -248,7 +248,7 @@ export default function Portfolio() {
           {/* PORTFOLIO 9 */}
           <div className="portfolio__content grid swiper-slide">
             <img
-              src="assets/images/portfolio/starbucks-clone-css.png"
+              src="/assets/images/portfolio/starbucks-clone-css.png"
               alt="Starbucks Clone"
               className="portfolio__img"
             />
@@ -273,7 +273,7 @@ export default function Portfolio() {
           {/* PORTFOLIO 10 */}
           <div className="portfolio__content grid swiper-slide">
             <img
-              src="assets/images/portfolio/qr-code-genarator.png"
+              src="/assets/images/portfolio/qr-code-genarator.png"
               alt="QR Code Generator"
               className="portfolio__img"
             />
@@ -301,7 +301,7 @@ export default function Portfolio() {
           {/* PORTFOLIO 1 */}
           <div className="portfolio__content grid swiper-slide">
             <img
-              src="assets/images/portfolio/home-library.png"
+              src="/assets/images/portfolio/home-library.png"
               alt="My Home Library"
               className="portfolio__img"
             />
@@ -327,7 +327,7 @@ export default function Portfolio() {
           {/* PORTFOLIO 12 */}
           <div className="portfolio__content grid swiper-slide">
             <img
-              src="assets/images/portfolio/portfolio-3.jfif"
+              src="/assets/images/portfolio/portfolio-3.jfif"
               alt=""
               className="portfolio__img"
             />

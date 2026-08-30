@@ -13,7 +13,7 @@ export default function Testimonials() {
             <div className="testimonial__data">
               <div className="testimonial__header">
                 <img
-                  src="/assets/images//friends/rifatcangurbuz.jfif"
+                  src="/assets/images/friends/rifatcangurbuz.jfif"
                   alt=""
                   className="testimonial__img"
                 />

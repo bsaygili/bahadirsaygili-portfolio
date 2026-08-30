@@ -74,7 +74,7 @@ export default function Hero() {
                   className="home__blob-img"
                   x={38}
                   y={15}
-                  href="assets/images/profile/profilpic-rbg.png"
+                  href="/assets/images/profile/profilpic-rbg.png"
                 />
               </g>
             </svg>
